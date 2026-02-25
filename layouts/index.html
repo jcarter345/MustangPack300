@@ -1,0 +1,124 @@
+{{ define "main" }}
+
+<!-- ======= HERO ======= -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-fleur" aria-hidden="true">⚜</span>
+      <h1 class="hero-title">Cub Scout Pack {{ .Site.Params.pack_number }}</h1>
+      {{ with .Site.Params.location }}
+      <p class="hero-location">{{ . }}</p>
+      {{ end }}
+      <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
+      <a href="{{ .Site.Params.beascout_url }}" class="hero-cta" target="_blank" rel="noopener">
+        Join Our Pack &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= QUICK FACTS ======= -->
+<section class="quick-facts" aria-label="Pack at a glance">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="fact">
+        <span class="fact-label">Who Can Join</span>
+        <span class="fact-value">Grades K &ndash; 5</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">When We Meet</span>
+        <span class="fact-value">{{ with .Site.Params.meeting_schedule }}{{ . }}{{ else }}Contact us for schedule{{ end }}</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Our Location</span>
+        <span class="fact-value">{{ with .Site.Params.location }}{{ . }}{{ else }}Contact us for details{{ end }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= NEWS FEED ======= -->
+<section class="news-section">
+  <div class="container">
+    <h2 class="section-title">Latest News</h2>
+
+    {{ $posts := where .Site.RegularPages "Section" "posts" }}
+    {{ $posts = $posts.ByDate.Reverse }}
+
+    {{ if $posts }}
+    <div class="post-grid">
+      {{ range $posts }}
+      <article class="post-card">
+        {{ with .Params.image }}
+        <div class="post-card-img">
+          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="post-card-body">
+          <div class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "January 2, 2006" }}
+            </time>
+            {{ with .Params.categories }}
+            <span class="post-cats">
+              {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+            </span>
+            {{ end }}
+          </div>
+          <h3 class="post-card-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          <p class="post-card-summary">{{ .Summary }}</p>
+          <a class="read-more" href="{{ .RelPermalink }}">Read more &rarr;</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+
+    {{ else }}
+    <div class="empty-state">
+      <p>No posts yet &mdash; check back soon!</p>
+      <p class="empty-hint">Leaders: add markdown files to <code>content/posts/</code> or run<br>
+        <code>hugo new posts/my-post-title.md</code></p>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+
+<!-- ======= PHOTO GALLERY ======= -->
+<section class="photo-gallery" aria-label="Pack activities">
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="/images/193A8987-photo-CSBC.jpg" alt="Scouts making s'mores at a campfire" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="/images/20231227-13-55-12-10-photo-CSBC.jpg" alt="Pack community service project" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="/images/Full-SizedJPEG-40_photo_CSBC.jpg" alt="Pinewood Derby race day" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="/images/_B0A7708_photo_CSBC.jpg" alt="Scout learning to set up camp" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ======= GET INVOLVED CTA ======= -->
+<section class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">Ready to Join the Adventure?</h2>
+    <p class="cta-desc">Cub Scouting is open to boys and girls in kindergarten through 5th grade. New Scouts are welcome at any time during the year!</p>
+    <div class="cta-buttons">
+      <a href="{{ .Site.Params.beascout_url }}" class="btn btn-gold" target="_blank" rel="noopener">
+        Register at BeAScout
+      </a>
+      {{ with .Site.Params.contact_email }}
+      <a href="mailto:{{ . }}" class="btn btn-outline">Email Us</a>
+      {{ end }}
+      <a href="/about/" class="btn btn-outline">Learn More</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

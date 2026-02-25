@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<div class="page-header page-header--refs">
+  <div class="container">
+    <h1 class="page-header-title">{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="page-header-desc">{{ . }}</div>
+    {{ end }}
+  </div>
+</div>
+
+<div class="container">
+
+  {{ range .Site.Data.references.categories }}
+  <section class="ref-category">
+    <h2 class="ref-category-title">
+      {{ with .icon }}<span class="ref-icon" aria-hidden="true">{{ . }}</span>{{ end }}
+      {{ .name }}
+    </h2>
+    <div class="ref-grid">
+      {{ range .links }}
+      <a class="ref-card{{ if eq .url "#" }} ref-card--placeholder{{ end }}"
+         href="{{ .url }}"
+         {{ if ne .url "#" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+        <span class="ref-card-title">{{ .title }}</span>
+        <span class="ref-card-desc">{{ .description }}</span>
+        {{ if ne .url "#" }}<span class="ref-card-ext" aria-hidden="true">↗</span>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+</div>
+
+{{ end }}

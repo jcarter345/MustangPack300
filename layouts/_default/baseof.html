@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Pack 300 News" href="/posts/index.xml">
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+
+        <a href="/" class="site-logo" aria-label="{{ .Site.Title }} home">
+<div class="logo-text">
+            <span class="logo-sub">Cub Scouts</span>
+            <span class="logo-pack">Pack {{ .Site.Params.pack_number }}</span>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav-list" id="nav-list">
+            {{ range .Site.Menus.main }}
+            <li>
+              <a href="{{ .URL }}"
+                 {{ if or (eq $.RelPermalink .URL) (and (eq .URL "/") $.IsHome) }}
+                   class="active" aria-current="page"
+                 {{ end }}>
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= MAIN ======= -->
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-fleur" aria-hidden="true">⚜</span>
+        <span>Pack 300 · Cub Scouts</span>
+      </div>
+      <p class="footer-tagline">{{ .Site.Params.tagline }}</p>
+      {{ with .Site.Params.contact_email }}
+      <p class="footer-contact">Questions? <a href="mailto:{{ . }}">{{ . }}</a></p>
+      {{ end }}
+      <p class="footer-copy">&copy; {{ now.Year }} Cub Scout Pack 300. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', function () {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!expanded));
+      navList.classList.toggle('open');
+    });
+    // Close nav when a link is clicked
+    navList.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
