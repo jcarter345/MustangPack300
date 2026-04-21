@@ -18,11 +18,6 @@
   <article class="post-full">
 
     <header class="post-full-header">
-      {{ with .Params.categories }}
-      <div class="post-cats">
-        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
-      </div>
-      {{ end }}
       <h1 class="post-full-title">{{ .Title }}</h1>
       {{ if not .Date.IsZero }}
       <div class="post-meta">
@@ -42,12 +37,6 @@
     </div>
 
     <footer class="post-full-footer">
-      {{ with .Params.tags }}
-      <div class="post-tags">
-        <strong>Tags:</strong>
-        {{ range . }}<span class="tag tag--sm">{{ . }}</span>{{ end }}
-      </div>
-      {{ end }}
       <a class="back-link" href="javascript:history.back()">← Back</a>
     </footer>
 

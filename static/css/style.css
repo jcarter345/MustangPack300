@@ -503,9 +503,10 @@ img { max-width: auto; height: auto; display: block; }
 .back-link:hover { color: var(--gold-dark); }
 
 /* ============================================================
-   ABOUT PAGE
+   ABOUT SECTION (homepage + standalone page)
    ============================================================ */
-.about-content { max-width: 800px; margin: 2.5rem auto 4rem; }
+.about-section { padding: 3rem 0 4rem; background: var(--white); }
+.about-content { max-width: 800px; margin: 0 auto; }
 
 /* ============================================================
    EVENTS / CALENDAR

@@ -2,13 +2,6 @@ baseURL = "https://cubscoutpack300.org/"
 languageCode = "en-us"
 title = "Cub Scout Pack 300"
 
-# Enable content section summaries
-summaryLength = 50
-
-# Pagination for news posts
-[pagination]
-  pagerSize = 6
-
 [params]
   description = "Cub Scout Pack 300 — Doing Our Best!"
   tagline = "Be Prepared · Do Your Best"
@@ -41,14 +34,8 @@ summaryLength = 50
 
 [menus]
   [[menus.main]]
-    name       = "News"
-    pageRef    = "/"
-    url        = "/"
-    weight     = 1
-  [[menus.main]]
     name       = "About"
-    pageRef    = "/about"
-    url        = "/about/"
+    url        = "/#about"
     weight     = 2
   [[menus.main]]
     name       = "Events"

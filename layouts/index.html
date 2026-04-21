@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- ======= HERO ======= -->
-<section class="hero">
+<section id="home" class="hero">
   <div class="container">
     <div class="hero-content">
       <span class="hero-fleur" aria-hidden="true">⚜</span>
@@ -37,54 +37,16 @@
   </div>
 </section>
 
-<!-- ======= NEWS FEED ======= -->
-<section class="news-section">
+<!-- ======= ABOUT ======= -->
+{{ with .Site.GetPage "/about" }}
+<section id="about" class="about-section">
   <div class="container">
-    <h2 class="section-title">Latest News</h2>
-
-    {{ $posts := where .Site.RegularPages "Section" "posts" }}
-    {{ $posts = $posts.ByDate.Reverse }}
-
-    {{ if $posts }}
-    <div class="post-grid">
-      {{ range $posts }}
-      <article class="post-card">
-        {{ with .Params.image }}
-        <div class="post-card-img">
-          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
-        </div>
-        {{ end }}
-        <div class="post-card-body">
-          <div class="post-meta">
-            <time datetime="{{ .Date.Format "2006-01-02" }}">
-              {{ .Date.Format "January 2, 2006" }}
-            </time>
-            {{ with .Params.categories }}
-            <span class="post-cats">
-              {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
-            </span>
-            {{ end }}
-          </div>
-          <h3 class="post-card-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </h3>
-          <p class="post-card-summary">{{ .Summary }}</p>
-          <a class="read-more" href="{{ .RelPermalink }}">Read more &rarr;</a>
-        </div>
-      </article>
-      {{ end }}
+    <div class="about-content prose">
+      {{ .Content }}
     </div>
-
-    {{ else }}
-    <div class="empty-state">
-      <p>No posts yet &mdash; check back soon!</p>
-      <p class="empty-hint">Leaders: add markdown files to <code>content/posts/</code> or run<br>
-        <code>hugo new posts/my-post-title.md</code></p>
-    </div>
-    {{ end }}
-
   </div>
 </section>
+{{ end }}
 
 <!-- ======= PHOTO GALLERY ======= -->
 <section class="photo-gallery" aria-label="Pack activities">
@@ -105,7 +67,7 @@
 </section>
 
 <!-- ======= GET INVOLVED CTA ======= -->
-<section class="cta-section">
+<section id="join" class="cta-section">
   <div class="container">
     <h2 class="cta-title">Ready to Join the Adventure?</h2>
     <p class="cta-desc">Cub Scouting is open to boys and girls in kindergarten through 5th grade. New Scouts are welcome at any time during the year!</p>
@@ -116,7 +78,6 @@
       {{ with .Site.Params.contact_email }}
       <a href="mailto:{{ . }}" class="btn btn-outline">Email Us</a>
       {{ end }}
-      <a href="/about/" class="btn btn-outline">Learn More</a>
     </div>
   </div>
 </section>
