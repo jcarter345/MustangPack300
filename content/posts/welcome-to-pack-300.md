@@ -19,8 +19,8 @@ We're thrilled to be starting another great year of Scouting! Whether your Scout
 
 - **Monthly pack meetings** with themed activities and advancement ceremonies
 - **Den meetings** twice a month for focused rank advancement work
-- **Fall camping trip** — details coming soon on the Events page
-- **Pinewood Derby** in the spring — start sketching those car designs!
+- **Fall camping trip** — see the recap post for highlights from this year's campout!
+- **Pinewood Derby** in the spring — car kits are available, see the Events page for Derby Day details!
 - **Community service projects** throughout the year
 
 ### Stay Connected

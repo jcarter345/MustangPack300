@@ -17,7 +17,7 @@ The most anticipated event of the Cub Scout year is almost here — **Pinewood D
 |------|-------|
 | January 15 | Car kits available |
 | February 8 | Optional design workshop (den meeting) |
-| **March 1** | **Derby Day! — 10 AM at [Location]** |
+| **March 1** | **Derby Day! — 10 AM (location TBA — check the Events page)** |
 
 ## Rules & Tips
 
@@ -28,7 +28,7 @@ The most anticipated event of the Cub Scout year is almost here — **Pinewood D
 
 ### Resources
 
-- Download the [official rules sheet](#) *(replace # with your rules document link)*
+- Official rules sheet available at pack meetings
 - YouTube has great tutorials on basic shaping and painting
 - The pack will have a **weigh-in** available at the February den meeting
 

@@ -9,7 +9,7 @@ description: "Learn about Cub Scout Pack 300"
 
 Cub Scout Pack 300 is a proud unit of **Scouting America**, dedicated to helping young people develop character, citizenship, and a love of the outdoors.
 
-We serve youth from **1st through 5th grade** (Lions through Webelos), meeting regularly to earn adventures, work on service projects, and build friendships that last a lifetime.
+We serve youth from **1st through 5th grade** (Lions through Arrow of Light), meeting regularly to earn adventures, work on service projects, and build friendships that last a lifetime.
 
 ---
 
@@ -27,20 +27,18 @@ To prepare young people to make ethical and moral choices over their lifetimes b
 
 | Role | Name | Contact |
 |------|------|---------|
-| Cubmaster | *(Your Name)* | *(your-email@example.com)* |
+| Cubmaster | David Sharp | davidsharp75@gmail.com |
 | Assistant Cubmaster | *(Name)* | — |
 | Pack Committee Chair | *(Name)* | — |
 | Treasurer | *(Name)* | — |
-
-*Update the table above with your actual leadership roster.*
 
 ---
 
 ## Meeting Information
 
-- **When:** *(e.g., 2nd and 4th Tuesdays of the month, 6:30 – 7:30 PM)*
-- **Where:** *(Meeting location — e.g., First Presbyterian Church, 123 Main St)*
-- **Chartered Organization:** *(Name of your chartering organization)*
+- **When:** Monday nights at 6:00 PM
+- **Where:** United Methodist Church of the Good Shepherd (UMCGS), 10928 SW 15th St, Yukon, OK 73099
+- **Chartered Organization:** United Methodist Church of the Good Shepherd
 
 ---
 
