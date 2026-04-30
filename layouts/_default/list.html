@@ -15,7 +15,7 @@
     <article class="post-card">
       {{ with .Params.image }}
       <div class="post-card-img">
-        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        <img src="{{ . }}" alt="{{ .Title }}" loading="lazy">
       </div>
       {{ end }}
       <div class="post-card-body">

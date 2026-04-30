@@ -10,13 +10,21 @@ summaryLength = 50
   pagerSize = 6
 
 [params]
-  description = "Cub Scout Pack 300 — Doing Our Best!"
+  description = "Cub Scout Pack 300 — Do Your Best!"
   tagline = "Do Your Best"
   pack_number = "300"
 
   # Calendar subscribe URLs (shown as buttons on the Events page)
   # Google: https://calendar.google.com/calendar/r?cid=YOUR_CALENDAR_ID
   # Apple / iCal: webcal://calendar.google.com/calendar/ical/YOUR_CALENDAR_ID/public/basic.ics
+  #
+  # TODO: Scoutbook sync
+  #   1. In Scoutbook → Calendar → Export/Subscribe → copy the ICS/webcal link
+  #   2. In Google Calendar → + Other calendars → From URL → paste the link
+  #      (Google will poll Scoutbook ~every 24h automatically)
+  #   3. Update calendar_subscribe_google, calendar_subscribe_ical, and
+  #      calendar_embed_url below to point at the Pack 300 Google Calendar
+  #      (Settings → your calendar → Integrate calendar for the embed src URL)
   calendar_subscribe_google = "en.usa#holiday@group.v.calendar.google.com"
   calendar_subscribe_ical   = "https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics"
 
@@ -36,29 +44,29 @@ summaryLength = 50
   beascout_url = "https://beascout.scouting.org"
 
   # Social / contact (optional — leave blank to hide)
-  contact_email = "davidsharp75@gmail.com"
+  contact_email = "cubmaster@pack300.org"
   facebook_url  = ""
 
 [menus]
   [[menus.main]]
-    name       = "News"
-    pageRef    = "/"
-    url        = "/"
-    weight     = 1
-  [[menus.main]]
     name       = "About"
     pageRef    = "/about"
     url        = "/about/"
-    weight     = 2
+    weight     = 1
   [[menus.main]]
     name       = "Events"
     pageRef    = "/events"
     url        = "/events/"
-    weight     = 3
+    weight     = 2
   [[menus.main]]
     name       = "References"
     pageRef    = "/references"
     url        = "/references/"
+    weight     = 3
+  [[menus.main]]
+    name       = "FAQ"
+    pageRef    = "/faq"
+    url        = "/faq/"
     weight     = 4
 
 [markup]

@@ -8,8 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="alternate" type="application/rss+xml" title="Pack 300 News" href="/posts/index.xml">
+  <!-- Open Graph -->
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 </head>
 <body>
 
@@ -19,7 +27,8 @@
       <div class="header-inner">
 
         <a href="/" class="site-logo" aria-label="{{ .Site.Title }} home">
-<div class="logo-text">
+          <img src="/images/CubScoutsLogo-nobg.png" alt="Cub Scout Pack {{ .Site.Params.pack_number }}" class="logo-img">
+          <div class="logo-text">
             <span class="logo-sub">Cub Scouts</span>
             <span class="logo-pack">Pack {{ .Site.Params.pack_number }}</span>
           </div>

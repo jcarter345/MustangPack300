@@ -5,11 +5,11 @@ description: "Learn about Cub Scout Pack 300"
 
 ## Welcome to Pack 300
 
-![Cub Scout Pack 300 — join the adventure](/images/CubsBCCover_logo_CSBC.jpg)
+![Cub Scout Pack 300 — join the adventure](/images/Pack%203300-All%20photos-72648658229-safe.jpg)
 
 Cub Scout Pack 300 is a proud unit of **Scouting America**, dedicated to helping young people develop character, citizenship, and a love of the outdoors.
 
-We serve youth from **1st through 5th grade** (Lions through Arrow of Light), meeting regularly to earn adventures, work on service projects, and build friendships that last a lifetime.
+We serve youth from **Kindergarten through 5th grade** (Lions through Arrow of Light), meeting regularly to earn adventures, work on service projects, and build friendships that last a lifetime.
 
 ---
 
@@ -26,11 +26,8 @@ To prepare young people to make ethical and moral choices over their lifetimes b
 ## Pack Leadership
 
 | Role | Name | Contact |
-|------|------|---------|
-| Cubmaster | David Sharp | davidsharp75@gmail.com |
-| Assistant Cubmaster | *(Name)* | — |
-| Pack Committee Chair | *(Name)* | — |
-| Treasurer | *(Name)* | — |
+| --- | --- | --- |
+| Cubmaster | David Sharp | cubmaster@pack300.org |
 
 ---
 
@@ -53,3 +50,48 @@ Interested in having your child join? We welcome new Scouts at any point during 
 3. Come to a meeting — visitors are always welcome!
 
 **Annual dues** cover registration fees, awards, and pack activities. Contact the pack for current rates.
+
+---
+
+## Ranks & Dens
+
+Cub Scouts are organized into **dens** by grade level. Each den follows a rank program matched to their age and school year.
+
+| Rank | Grade | Notes |
+| --- | --- | --- |
+| Lion | Kindergarten | Adult partner required at every meeting; max 8 Scouts |
+| Tiger | 1st Grade | Adult partner required at every meeting; max 8 Scouts |
+| Wolf | 2nd Grade | Den leader and assistant den leader |
+| Bear | 3rd Grade | Den leader and assistant den leader |
+| Webelos | 4th Grade | Den leader and assistant den leader; may have a den chief |
+| Arrow of Light | 5th Grade | Bridges to Scouts BSA upon completion |
+
+Dens typically meet **twice a month** in addition to full pack meetings. Lion and Tiger dens require a parent or adult partner to attend every den meeting alongside their Scout.
+
+---
+
+## Pack Activities
+
+Pack 300 gathers throughout the year for events that build skills, friendships, and community pride:
+
+- **Pinewood Derby** — Scouts (with family help) design, build, and race a regulation wood car
+- **Blue and Gold Banquet** — Cub Scouting's annual birthday celebration, held each February
+- **Camping** — overnight camp-outs and day camp opportunities through the year
+- **Service Projects** — food drives, conservation work, and neighborhood community activities
+- **Field Trips and Special Outings** — museums, fire stations, sporting events, and more
+
+---
+
+## Get Involved
+
+Cub Scouting works best when families are active partners. Here are a few ways to plug in:
+
+**Volunteer roles** open to interested parents and guardians:
+
+- Den Leader or Assistant Den Leader
+- Cubmaster or Assistant Cubmaster
+- Committee Chair, Advancement Chair, Secretary, or Treasurer
+
+Training for all roles is available free at [my.Scouting.org](https://my.scouting.org). Youth Protection training is required for all registered adult leaders and takes about 90 minutes online.
+
+**Track your Scout's progress** with the free **Scouting** app (available on Apple and Android) or at [Scoutbook](https://scoutbook.scouting.org). Both tools let parents log completed adventure requirements and view upcoming activities.

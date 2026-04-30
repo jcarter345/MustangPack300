@@ -4,15 +4,17 @@
 <section class="hero">
   <div class="container">
     <div class="hero-content">
-      <span class="hero-fleur" aria-hidden="true">⚜</span>
+      <img src="/images/CubScoutsLogo-nobg.png" alt="Cub Scout Pack {{ .Site.Params.pack_number }}" class="hero-logo">
       <h1 class="hero-title">Cub Scout Pack {{ .Site.Params.pack_number }}</h1>
       {{ with .Site.Params.location }}
       <p class="hero-location">{{ . }}</p>
       {{ end }}
       <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
-      <a href="{{ .Site.Params.beascout_url }}" class="hero-cta" target="_blank" rel="noopener">
-        Join Our Pack &rarr;
-      </a>
+      <p class="hero-welcome">New families welcome at every meeting &mdash; no commitment required</p>
+      <div class="hero-cta-group">
+        <a href="#come-see-us" class="hero-cta hero-cta--primary">Come See a Meeting</a>
+        <a href="{{ .Site.Params.beascout_url }}" class="hero-cta hero-cta--secondary" target="_blank" rel="noopener">Register at BeAScout</a>
+      </div>
     </div>
   </div>
 </section>
@@ -30,59 +32,24 @@
         <span class="fact-value">{{ with .Site.Params.meeting_schedule }}{{ . }}{{ else }}Contact us for schedule{{ end }}</span>
       </div>
       <div class="fact">
-        <span class="fact-label">Our Location</span>
-        <span class="fact-value">{{ with .Site.Params.location }}{{ . }}{{ else }}Contact us for details{{ end }}</span>
+        <span class="fact-label">Walk-ins Welcome</span>
+        <span class="fact-value">Any Monday &mdash; just show up</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ======= NEWS FEED ======= -->
-<section class="news-section">
+<!-- ======= ABOUT ======= -->
+<section class="about-section">
   <div class="container">
-    <h2 class="section-title">Latest News</h2>
-
-    {{ $posts := where .Site.RegularPages "Section" "posts" }}
-    {{ $posts = $posts.ByDate.Reverse }}
-
-    {{ if $posts }}
-    <div class="post-grid">
-      {{ range $posts }}
-      <article class="post-card">
-        {{ with .Params.image }}
-        <div class="post-card-img">
-          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
-        </div>
-        {{ end }}
-        <div class="post-card-body">
-          <div class="post-meta">
-            <time datetime="{{ .Date.Format "2006-01-02" }}">
-              {{ .Date.Format "January 2, 2006" }}
-            </time>
-            {{ with .Params.categories }}
-            <span class="post-cats">
-              {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
-            </span>
-            {{ end }}
-          </div>
-          <h3 class="post-card-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </h3>
-          <p class="post-card-summary">{{ .Summary }}</p>
-          <a class="read-more" href="{{ .RelPermalink }}">Read more &rarr;</a>
-        </div>
-      </article>
-      {{ end }}
-    </div>
-
-    {{ else }}
-    <div class="empty-state">
-      <p>No posts yet &mdash; check back soon!</p>
-      <p class="empty-hint">Leaders: add markdown files to <code>content/posts/</code> or run<br>
-        <code>hugo new posts/my-post-title.md</code></p>
+    {{ $about := site.GetPage "/about" }}
+    {{ with $about }}
+    <div class="prose about-content">
+      <h2 class="section-title">About Our Pack</h2>
+      <p>{{ .Summary }}</p>
+      <a href="/about/" class="read-more">Meet our pack &rarr;</a>
     </div>
     {{ end }}
-
   </div>
 </section>
 
@@ -91,32 +58,63 @@
   <div class="gallery-grid">
     <div class="gallery-item">
       <img src="/images/193A8987-photo-CSBC.jpg" alt="Scouts making s'mores at a campfire" loading="lazy">
+      <div class="gallery-caption">Every meeting ends with something they'll remember</div>
     </div>
     <div class="gallery-item">
       <img src="/images/20231227-13-55-12-10-photo-CSBC.jpg" alt="Pack community service project" loading="lazy">
+      <div class="gallery-caption">Scouts who do something bigger than themselves</div>
     </div>
     <div class="gallery-item">
       <img src="/images/Full-SizedJPEG-40_photo_CSBC.jpg" alt="Pinewood Derby race day" loading="lazy">
+      <div class="gallery-caption">Their car, their rules, their trophy</div>
     </div>
     <div class="gallery-item">
       <img src="/images/_B0A7708_photo_CSBC.jpg" alt="Scout learning to set up camp" loading="lazy">
+      <div class="gallery-caption">Pack 300 takes the outdoors seriously</div>
     </div>
   </div>
 </section>
 
-<!-- ======= GET INVOLVED CTA ======= -->
+<!-- ======= COME SEE US ======= -->
+<section class="visit-section" id="come-see-us">
+  <div class="container">
+    <div class="visit-card">
+      <p class="visit-eyebrow">Visitors Always Welcome</p>
+      <h2 class="visit-headline">Monday Nights at 6:00 PM</h2>
+      <p class="visit-venue">United Methodist Church of the Good Shepherd</p>
+      <p class="visit-address">10928 SW 15th St, Yukon, OK 73099</p>
+      <p class="visit-next"><strong>Next meeting:</strong> <span id="next-meeting-date">Monday nights at 6:00 PM</span></p>
+      <p class="visit-note">Walk in any Monday night. No forms, no commitment &mdash; just come see if it&rsquo;s right for your family.</p>
+      <a href="https://maps.google.com/?q=10928+SW+15th+St+Yukon+OK+73099" class="btn btn-blue" target="_blank" rel="noopener">Get Directions</a>
+    </div>
+  </div>
+</section>
+<script>
+  (function () {
+    var now = new Date();
+    var day = now.getDay(); // 0=Sun … 6=Sat
+    // If it's Monday before 6 PM, show tonight; otherwise find next Monday
+    var daysUntil = (day === 1 && now.getHours() < 18) ? 0 : (1 - day + 7) % 7 || 7;
+    var target = new Date(now);
+    target.setDate(now.getDate() + daysUntil);
+    var label = target.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    var el = document.getElementById('next-meeting-date');
+    if (el) el.textContent = label + ' at 6:00 PM';
+  })();
+</script>
+
+<!-- ======= REGISTER CTA ======= -->
 <section class="cta-section">
   <div class="container">
-    <h2 class="cta-title">Ready to Join the Adventure?</h2>
-    <p class="cta-desc">Cub Scouting is open to boys and girls in kindergarten through 5th grade. New Scouts are welcome at any time during the year!</p>
+    <h2 class="cta-title">Ready to Make It Official?</h2>
+    <p class="cta-desc">Registration is quick and new Scouts are welcome at any point during the year.</p>
     <div class="cta-buttons">
       <a href="{{ .Site.Params.beascout_url }}" class="btn btn-gold" target="_blank" rel="noopener">
         Register at BeAScout
       </a>
       {{ with .Site.Params.contact_email }}
-      <a href="mailto:{{ . }}" class="btn btn-outline">Email Us</a>
+      <a href="mailto:{{ . }}" class="btn btn-outline">Email the Cubmaster</a>
       {{ end }}
-      <a href="/about/" class="btn btn-outline">Learn More</a>
     </div>
   </div>
 </section>
