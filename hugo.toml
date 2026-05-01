@@ -25,14 +25,14 @@ summaryLength = 50
   #   3. Update calendar_subscribe_google, calendar_subscribe_ical, and
   #      calendar_embed_url below to point at the Pack 300 Google Calendar
   #      (Settings → your calendar → Integrate calendar for the embed src URL)
-  calendar_subscribe_google = "en.usa#holiday@group.v.calendar.google.com"
-  calendar_subscribe_ical   = "https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics"
+  calendar_subscribe_google = "igpr8g4eooml2pp2omo7fv2707qgoob8@import.calendar.google.com"
+  calendar_subscribe_ical   = "https://calendar.google.com/calendar/ical/igpr8g4eooml2pp2omo7fv2707qgoob8%40import.calendar.google.com/public/basic.ics"
 
   # Google Calendar embed URL
   # To get this: open Google Calendar → Settings (gear) → your calendar → "Integrate calendar"
   # Copy the "Embed code" src URL and paste it below.
   # Your calendar must be set to Public for this to work.
-  calendar_embed_url = "https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FChicago"
+  calendar_embed_url = "https://calendar.google.com/calendar/embed?src=igpr8g4eooml2pp2omo7fv2707qgoob8%40import.calendar.google.com&ctz=America%2FChicago"
 
   # Location & meeting info (shown on homepage quick-facts strip)
   location         = "10928 SW 15th St, Yukon, OK 73099"
@@ -59,14 +59,14 @@ summaryLength = 50
     url        = "/events/"
     weight     = 2
   [[menus.main]]
-    name       = "References"
-    pageRef    = "/references"
-    url        = "/references/"
-    weight     = 3
-  [[menus.main]]
     name       = "FAQ"
     pageRef    = "/faq"
     url        = "/faq/"
+    weight     = 3
+  [[menus.main]]
+    name       = "References"
+    pageRef    = "/references"
+    url        = "/references/"
     weight     = 4
 
 [markup]
