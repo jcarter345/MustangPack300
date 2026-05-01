@@ -18,7 +18,7 @@ We serve youth from **Kindergarten through 5th grade** (Lions through Arrow of L
 To prepare young people to make ethical and moral choices over their lifetimes by instilling in them the values of the **Scout Oath** and **Scout Law**.
 
 > **Scout Oath:** On my honor, I will do my best to do my duty to God and my country and to obey the Scout Law; to help other people at all times; to keep myself physically strong, mentally awake, and morally straight.
-
+>
 > **Scout Law:** A Scout is trustworthy, loyal, helpful, friendly, courteous, kind, obedient, cheerful, thrifty, brave, clean, and reverent.
 
 ---
@@ -27,7 +27,7 @@ To prepare young people to make ethical and moral choices over their lifetimes b
 
 | Role | Name | Contact |
 | --- | --- | --- |
-| Cubmaster | David Sharp | cubmaster@pack300.org |
+| Cubmaster | David Sharp | [cubmaster@pack300.org](mailto:cubmaster@pack300.org) |
 
 ---
 
@@ -43,7 +43,7 @@ To prepare young people to make ethical and moral choices over their lifetimes b
 
 ![Scouts and their leader at a community food drive](/images/20231227-13-55-12-10-photo-CSBC.jpg)
 
-Interested in having your child join? We welcome new Scouts at any point during the year!
+Thinking about joining Pack 300? We welcome new Scouts at any point during the year!
 
 1. Visit [BeAScout.org](https://beascout.scouting.org) to officially register online.
 2. Contact our Cubmaster at the email above with any questions.
@@ -66,7 +66,7 @@ Cub Scouts are organized into **dens** by grade level. Each den follows a rank p
 | Webelos | 4th Grade | Den leader and assistant den leader; may have a den chief |
 | Arrow of Light | 5th Grade | Bridges to Scouts BSA upon completion |
 
-Dens typically meet **twice a month** in addition to full pack meetings. Lion and Tiger dens require a parent or adult partner to attend every den meeting alongside their Scout.
+The full pack meets **every Monday at 6:00 PM**. Individual dens may also schedule their own separate meetings. Lion and Tiger dens require a parent or adult partner to attend every den meeting alongside their Scout.
 
 ---
 
@@ -90,7 +90,7 @@ Cub Scouting works best when families are active partners. Here are a few ways t
 
 - Den Leader or Assistant Den Leader
 - Cubmaster or Assistant Cubmaster
-- Committee Chair, Advancement Chair, Secretary, or Treasurer
+- Committee Chair, Advancement Chair, or Treasurer
 
 Training for all roles is available free at [my.Scouting.org](https://my.scouting.org). Youth Protection training is required for all registered adult leaders and takes about 90 minutes online.
 
