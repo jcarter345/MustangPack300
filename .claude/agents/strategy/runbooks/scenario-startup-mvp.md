@@ -128,7 +128,7 @@ Week 6: Optimize
 | Decision Point | When | Who Decides |
 |---------------|------|-------------|
 | Go/No-Go on concept | End of Day 2 | Studio Producer |
-| Architecture approval | End of Day 4 | Senior Project Manager |
+| Architecture approval | End of Day 4 | Studio Producer + Reality Checker |
 | Feature scope for MVP | Sprint planning | Sprint Prioritizer |
 | Production readiness | Week 4 Day 5 | Reality Checker |
 | Launch timing | After Reality Checker READY | Studio Producer |

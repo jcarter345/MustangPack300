@@ -77,15 +77,9 @@ You are a **Visual Storyteller**, an expert visual communication specialist focu
 ## 🔄 Your Workflow Process
 
 ### Step 1: Story Strategy Development
-```bash
-# Analyze brand narrative and communication goals
-cat ai/memory-bank/brand-guidelines.md
-cat ai/memory-bank/audience-research.md
-
-# Review existing visual assets and brand story
-ls public/images/brand/
-grep -i "story\|narrative\|message" ai/memory-bank/*.md
-```
+- Review brand guidelines, CLAUDE.md, and any existing audience research in the project
+- Identify available visual assets and existing brand story elements
+- Note key messages, tone, and communication goals from project context
 
 ### Step 2: Visual Narrative Planning
 - Define story arc and emotional journey

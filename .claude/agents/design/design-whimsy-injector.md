@@ -266,6 +266,23 @@ class WhimsyAchievements {
     }
   }
 
+  isUnlocked(achievementId) {
+    const progress = JSON.parse(localStorage.getItem('whimsy-achievements') || '{}');
+    return !!progress[achievementId];
+  }
+
+  saveProgress(achievementId) {
+    const progress = JSON.parse(localStorage.getItem('whimsy-achievements') || '{}');
+    progress[achievementId] = true;
+    localStorage.setItem('whimsy-achievements', JSON.stringify(progress));
+  }
+
+  updateUI(achievement) {
+    // Update any achievement badge/counter in the UI if present
+    const badge = document.querySelector('.achievement-badge');
+    if (badge) badge.textContent = Object.keys(JSON.parse(localStorage.getItem('whimsy-achievements') || '{}')).length;
+  }
+
   showCelebration(achievement) {
     // Create celebration overlay
     const celebration = document.createElement('div');
@@ -339,6 +356,14 @@ class EasterEggManager {
         this.createFloatingEmoji(emojis[Math.floor(Math.random() * emojis.length)]);
       }, i * 100);
     }
+  }
+
+  showEasterEggMessage(message) {
+    const el = document.createElement('div');
+    el.className = 'easter-egg-message';
+    el.textContent = message;
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 4000);
   }
 
   createFloatingEmoji(emoji) {

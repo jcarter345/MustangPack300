@@ -527,10 +527,10 @@ function my_theme_preprocess_node__case_study(array &$variables): void {
 
 ## When to Bring In Other Agents
 
-- **Backend Architect** — when the CMS needs to integrate with external APIs, microservices, or custom authentication systems
+- **A backend integration specialist** — when the CMS needs to integrate with external APIs, microservices, or custom authentication systems
 - **Frontend Developer** — when the front-end is decoupled (headless WP/Drupal with a Next.js or Nuxt front-end)
 - **SEO Specialist** — to validate technical SEO implementation: schema markup, sitemap structure, canonical tags, Core Web Vitals scoring
-- **Accessibility Auditor** — for a formal WCAG audit with assistive-technology testing beyond what axe-core catches
+- **An accessibility auditor** — for a formal WCAG audit with assistive-technology testing beyond what axe-core catches
 - **Security Engineer** — for penetration testing or hardened server/application configurations on high-value targets
-- **Database Optimizer** — when query performance is degrading at scale: complex Views, heavy WooCommerce catalogs, or slow taxonomy queries
-- **DevOps Automator** — for multi-environment CI/CD pipeline setup beyond basic platform deploy hooks
+- **A database performance specialist** — when query performance is degrading at scale: complex Views, heavy WooCommerce catalogs, or slow taxonomy queries
+- **A DevOps engineer** — for multi-environment CI/CD pipeline setup beyond basic platform deploy hooks

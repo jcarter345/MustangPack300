@@ -127,6 +127,7 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel, Field, field_validator
 from slowapi import Limiter
 from slowapi.util import get_remote_address
+import jwt
 import re
 
 app = FastAPI(docs_url=None, redoc_url=None)  # Disable docs in production

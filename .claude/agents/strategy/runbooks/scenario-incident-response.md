@@ -214,4 +214,4 @@ NEXT UPDATE: [Timestamp]
 | P1 not resolved in 2 hours | Project Shepherd | Resource reallocation |
 | Data breach suspected | Legal Compliance Checker | Regulatory notification assessment |
 | User data affected | Legal Compliance Checker + Executive Summary Generator | GDPR/CCPA notification |
-| Revenue impact > $X | Finance Tracker + Studio Producer | Business impact assessment |
+| Revenue impact > $10,000 | Finance Tracker + Studio Producer | Business impact assessment |

@@ -80,7 +80,7 @@ Implementation requirements:
 - Follow the design system tokens exactly (colors, typography, spacing)
 - Implement mobile-first responsive design
 - Ensure WCAG 2.1 AA accessibility compliance
-- Optimize for Core Web Vitals (LCP < 2.5s, FID < 100ms, CLS < 0.1)
+- Optimize for Core Web Vitals (LCP < 2.5s, INP < 200ms, CLS < 0.1)
 - Write component tests for all new components
 
 When complete, your work will be reviewed by Evidence Collector.

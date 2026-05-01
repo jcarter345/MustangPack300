@@ -10,7 +10,7 @@ categories:
         description: "Member registration and management portal — required for recharter and adult training."
       - title: "BeAScout.org"
         url: "https://beascout.scouting.org"
-        description: "Help friends find a local Scouting unit in their neighborhood."
+        description: "Find a local Scouting unit near you."
       - title: "Cub Scout Program Overview"
         url: "https://www.scouting.org/programs/cub-scouts/"
         description: "Ranks, adventures, and program information for Cub Scouts."
@@ -20,7 +20,7 @@ categories:
     links:
       - title: "Scoutbook"
         url: "https://www.scoutbook.com"
-        description: "Track advancement, awards, attendance, and merit badges online."
+        description: "Track advancement, awards, and attendance online."
       - title: "Cub Scout Advancement & Awards"
         url: "https://www.scouting.org/programs/cub-scouts/advancement-and-awards/"
         description: "Browse all Cub Scout ranks, adventures, and special awards."
