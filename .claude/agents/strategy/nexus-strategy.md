@@ -58,15 +58,9 @@ Individual agents are powerful. But without coordination, they produce:
 
 | Division | Agents | Primary NEXUS Role |
 |----------|--------|--------------------|
-| **Engineering** | Frontend Developer, Backend Architect, Mobile App Builder, AI Engineer, DevOps Automator, Rapid Prototyper, Senior Developer | Build, deploy, and maintain all technical systems |
-| **Design** | UI Designer, UX Researcher, UX Architect, Brand Guardian, Visual Storyteller, Whimsy Injector, Image Prompt Engineer | Define visual identity, user experience, and brand consistency |
-| **Marketing** | Growth Hacker, Content Creator, Twitter Engager, TikTok Strategist, Instagram Curator, Reddit Community Builder, App Store Optimizer, Social Media Strategist | Drive acquisition, engagement, and market presence |
-| **Product** | Sprint Prioritizer, Trend Researcher, Feedback Synthesizer | Define what to build, when, and why |
-| **Project Management** | Studio Producer, Project Shepherd, Studio Operations, Experiment Tracker, Senior Project Manager | Orchestrate timelines, resources, and cross-functional coordination |
-| **Testing** | Evidence Collector, Reality Checker, Test Results Analyzer, Performance Benchmarker, API Tester, Tool Evaluator, Workflow Optimizer | Verify quality through evidence-based assessment |
-| **Support** | Support Responder, Analytics Reporter, Finance Tracker, Infrastructure Maintainer, Legal Compliance Checker, Executive Summary Generator | Sustain operations, compliance, and business intelligence |
-| **Spatial Computing** | XR Interface Architect, macOS Spatial/Metal Engineer, XR Immersive Developer, XR Cockpit Interaction Specialist, visionOS Spatial Engineer, Terminal Integration Specialist | Build immersive and spatial computing experiences |
-| **Specialized** | Agents Orchestrator, LSP/Index Engineer, Sales Data Extraction Agent, Data Consolidation Agent, Report Distribution Agent | Cross-cutting coordination, deep analytics, and code intelligence |
+| **Engineering** | Frontend Developer, Rapid Prototyper, CMS Developer, Code Reviewer, Security Engineer, Technical Writer, Git Workflow Master | Build, review, secure, and document all technical systems |
+| **Design** | UI Designer, UX Architect, Brand Guardian, Visual Storyteller, Whimsy Injector, Image Prompt Engineer | Define visual identity, user experience, and brand consistency |
+| **Marketing** | Content Creator, Social Media Strategist, SEO Specialist, Instagram Curator, Agentic Search Optimizer | Drive acquisition, engagement, and market presence |
 
 ---
 
@@ -95,24 +89,30 @@ Individual agents are powerful. But without coordination, they produce:
 ### 2.2 Command Structure
 
 ```
-                    ┌──────────────────────┐
-                    │  Agents Orchestrator  │  ◄── Pipeline Controller
-                    │  (Specialized)        │
-                    └──────────┬───────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              │                │                │
-     ┌────────▼──────┐ ┌──────▼───────┐ ┌──────▼──────────┐
-     │ Studio        │ │ Project      │ │ Senior Project   │
-     │ Producer      │ │ Shepherd     │ │ Manager          │
-     │ (Portfolio)   │ │ (Execution)  │ │ (Task Scoping)   │
-     └───────────────┘ └──────────────┘ └─────────────────┘
-              │                │                │
-              ▼                ▼                ▼
-     ┌─────────────────────────────────────────────────┐
-     │           Division Leads (per phase)             │
-     │  Engineering │ Design │ Marketing │ Product │ QA │
-     └─────────────────────────────────────────────────┘
+                    ┌──────────────────────────────────────┐
+                    │       User / Orchestrating Context    │
+                    └──────────────────┬───────────────────┘
+                                       │
+               ┌───────────────────────┼───────────────────────┐
+               │                       │                       │
+      ┌────────▼────────┐    ┌─────────▼──────────┐  ┌────────▼───────────┐
+      │   Engineering   │    │      Design         │  │     Marketing      │
+      │ Frontend Dev    │    │  UX Architect       │  │ Content Creator    │
+      │ Rapid Prototyper│    │  UI Designer        │  │ Social Media Strat │
+      │ CMS Developer   │    │  Brand Guardian     │  │ SEO Specialist     │
+      │ Code Reviewer   │    │  Visual Storyteller │  │ Instagram Curator  │
+      │ Security Eng    │    │  Whimsy Injector    │  │ Agentic Search Opt │
+      │ Technical Writer│    │  Image Prompt Eng   │  └────────────────────┘
+      │ Git Workflow    │    └─────────────────────┘
+      └─────────────────┘
+               │
+               ▼
+      ┌──────────────────────────────────────────────┐
+      │              Quality Gates                    │
+      │  Code Reviewer      → every PR before merge  │
+      │  Security Engineer  → pre-launch sign-off     │
+      │  Brand Guardian     → all outward content     │
+      └──────────────────────────────────────────────┘
 ```
 
 ### 2.3 Activation Modes

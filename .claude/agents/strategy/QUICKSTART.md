@@ -1,44 +1,48 @@
 # ⚡ NEXUS Quick-Start Guide
 
-> **Get from zero to orchestrated multi-agent pipeline in 5 minutes.**
+> **Get from zero to coordinated multi-agent workflow in 5 minutes.**
 
 ---
 
 ## What is NEXUS?
 
-**NEXUS** (Network of EXperts, Unified in Strategy) turns The Agency's AI specialists into a coordinated pipeline. Instead of activating agents one at a time and hoping they work together, NEXUS defines exactly who does what, when, and how quality is verified at every step.
+**NEXUS** (Network of EXperts, Unified in Strategy) coordinates The Agency's 18 AI specialists into a structured workflow. Instead of activating agents one at a time and hoping they align, NEXUS defines who does what, in what order, and how quality is verified at each handoff.
 
 ## Choose Your Mode
 
 | I want to... | Use | Agents | Time |
 |-------------|-----|--------|------|
-| Build a complete product from scratch | **NEXUS-Full** | All | 12-24 weeks |
-| Build a feature or MVP | **NEXUS-Sprint** | 15-25 | 2-6 weeks |
-| Do a specific task (bug fix, campaign, audit) | **NEXUS-Micro** | 5-10 | 1-5 days |
+| Build a complete product | **NEXUS-Full** | All 18 | 4-12 weeks |
+| Build a feature or MVP | **NEXUS-Sprint** | 8-12 | 1-4 weeks |
+| Do a specific task | **NEXUS-Micro** | 2-5 | 1-5 days |
 
 ---
 
-## 🚀 NEXUS-Full: Start a Complete Project
+## 🚀 NEXUS-Full: Build a Complete Product
 
-**Copy this prompt to activate the full pipeline:**
+**Copy this prompt to start:**
 
 ```
-Activate Agents Orchestrator in NEXUS-Full mode.
+Begin NEXUS-Full pipeline for [PROJECT NAME].
 
-Project: [YOUR PROJECT NAME]
-Specification: [DESCRIBE YOUR PROJECT OR LINK TO SPEC]
+Specification: [DESCRIBE YOUR PROJECT]
 
-Execute the complete NEXUS pipeline:
-- Phase 0: Discovery (Trend Researcher, Feedback Synthesizer, UX Researcher, Analytics Reporter, Legal Compliance Checker, Tool Evaluator)
-- Phase 1: Strategy (Studio Producer, Senior Project Manager, Sprint Prioritizer, UX Architect, Brand Guardian, Backend Architect, Finance Tracker)
-- Phase 2: Foundation (DevOps Automator, Frontend Developer, Backend Architect, UX Architect, Infrastructure Maintainer)
-- Phase 3: Build (Dev↔QA loops — all engineering + Evidence Collector)
-- Phase 4: Harden (Reality Checker, Performance Benchmarker, API Tester, Legal Compliance Checker)
-- Phase 5: Launch (Growth Hacker, Content Creator, all marketing agents, DevOps Automator)
-- Phase 6: Operate (Analytics Reporter, Infrastructure Maintainer, Support Responder, ongoing)
+Phase sequence:
+- Strategy: UX Architect maps information architecture; Brand Guardian
+  establishes visual identity and tone
+- Foundation: Git Workflow Master sets branching strategy; Frontend Developer
+  scaffolds the project; UX Architect delivers CSS system and component specs
+- Build: Frontend Developer implements features (CMS Developer if content-
+  managed); Code Reviewer approves each PR before merge
+- Harden: Security Engineer audits the full codebase; Technical Writer
+  documents the system
+- Launch: SEO Specialist optimizes for search; Content Creator produces launch
+  content; Social Media Strategist and Instagram Curator execute distribution;
+  Agentic Search Optimizer audits AI-agent readiness of all key pages
 
-Quality gates between every phase. Evidence required for all assessments.
-Maximum 3 retries per task before escalation.
+Code Reviewer approval required before each feature merges.
+Security Engineer sign-off required before launch.
+Brand Guardian reviews all outward-facing content before publishing.
 ```
 
 ---
@@ -48,74 +52,81 @@ Maximum 3 retries per task before escalation.
 **Copy this prompt:**
 
 ```
-Activate Agents Orchestrator in NEXUS-Sprint mode.
-
-Feature/MVP: [DESCRIBE WHAT YOU'RE BUILDING]
+Begin NEXUS-Sprint for [FEATURE/MVP DESCRIPTION].
 Timeline: [TARGET WEEKS]
-Skip Phase 0 (market already validated).
 
-Sprint team:
-- PM: Senior Project Manager, Sprint Prioritizer
-- Design: UX Architect, Brand Guardian
-- Engineering: Frontend Developer, Backend Architect, DevOps Automator
-- QA: Evidence Collector, Reality Checker, API Tester
-- Support: Analytics Reporter
+Team:
+- Design: UX Architect (structure + CSS foundation), Brand Guardian (identity),
+  UI Designer (component library)
+- Engineering: Rapid Prototyper (initial scaffold), Frontend Developer
+  (implementation), Code Reviewer (quality gate on every PR)
+- Launch: Content Creator + Social Media Strategist (announcement and
+  distribution)
 
-Begin at Phase 1 with architecture and sprint planning.
-Run Dev↔QA loops for all implementation tasks.
-Reality Checker approval required before launch.
+Code Reviewer approves before merge.
+Security Engineer reviews before going live.
 ```
 
 ---
 
 ## 🎯 NEXUS-Micro: Do a Specific Task
 
-**Pick your scenario and copy the prompt:**
-
 ### Fix a Bug
 ```
-Activate Backend Architect to investigate and fix [BUG DESCRIPTION].
-After fix, activate API Tester to verify the fix.
-Then activate Evidence Collector to confirm no visual regressions.
+Frontend Developer: investigate and fix [BUG DESCRIPTION].
+Code Reviewer: verify the fix and check for regressions.
+If security-related: Security Engineer to review before merge.
+```
+
+### Build a Landing Page
+```
+UX Architect: design information architecture and layout spec.
+UI Designer: define component library and visual system.
+Frontend Developer: implement the page.
+Code Reviewer: review implementation.
+SEO Specialist: optimize meta, schema, and performance.
 ```
 
 ### Run a Marketing Campaign
 ```
-Activate Social Media Strategist as campaign lead for [CAMPAIGN DESCRIPTION].
-Team: Content Creator, Twitter Engager, Instagram Curator, Reddit Community Builder.
-Brand Guardian reviews all content before publishing.
-Analytics Reporter tracks performance daily.
-Growth Hacker optimizes channels weekly.
+Social Media Strategist: lead campaign strategy for [CAMPAIGN DESCRIPTION].
+Content Creator: produce copy and content assets.
+Instagram Curator: handle Instagram-specific content and scheduling.
+Brand Guardian: review all content before publishing.
+Agentic Search Optimizer: audit campaign landing pages for AI-agent readiness.
 ```
 
-### Conduct a Compliance Audit
+### Security Audit
 ```
-Activate Legal Compliance Checker for comprehensive compliance audit.
-Scope: [GDPR / CCPA / HIPAA / ALL]
-After audit, activate Executive Summary Generator to create stakeholder report.
-```
-
-### Investigate Performance Issues
-```
-Activate Performance Benchmarker to diagnose performance issues.
-Scope: [API response times / Page load / Database queries / All]
-After diagnosis, activate Infrastructure Maintainer for optimization.
-DevOps Automator deploys any infrastructure changes.
+Security Engineer: conduct full security audit of [SCOPE: API / frontend /
+infrastructure / all].
+Deliverables: threat model, vulnerability report with severity rankings,
+remediation plan.
+Technical Writer: document findings and mitigations for the engineering team.
 ```
 
-### Market Research
+### Content Sprint
 ```
-Activate Trend Researcher for market intelligence on [DOMAIN].
-Deliverables: Competitive landscape, market sizing, trend forecast.
-After research, activate Executive Summary Generator for executive brief.
+Content Creator: produce [CONTENT TYPE] for [AUDIENCE/CHANNEL].
+SEO Specialist: optimize for search visibility.
+Social Media Strategist: adapt and schedule across channels.
+Instagram Curator: handle Instagram-specific formatting and posting.
 ```
 
-### UX Improvement
+### New Feature Documentation
 ```
-Activate UX Researcher to identify usability issues in [FEATURE/PRODUCT].
-After research, activate UX Architect to design improvements.
-Frontend Developer implements changes.
-Evidence Collector verifies improvements.
+Technical Writer: document [FEATURE NAME].
+Deliverables: README update, API reference (if applicable), user-facing guide.
+Code Reviewer: verify technical accuracy.
+```
+
+### Visual/Brand Work
+```
+Brand Guardian: define or audit brand identity for [PROJECT/CAMPAIGN].
+Visual Storyteller: develop visual narrative and content direction.
+Image Prompt Engineer: generate image briefs and AI image prompts.
+UI Designer: translate brand into component library.
+Whimsy Injector: add personality and delight to key interactions.
 ```
 
 ---
@@ -143,51 +154,32 @@ Evidence Collector verifies improvements.
 
 ## 🔑 Key Concepts in 30 Seconds
 
-1. **Quality Gates** — No phase advances without evidence-based approval
-2. **Dev↔QA Loop** — Every task is built then tested; PASS to proceed, FAIL to retry (max 3)
-3. **Handoffs** — Structured context transfer between agents (never start cold)
-4. **Reality Checker** — Final quality authority; defaults to "NEEDS WORK"
-5. **Agents Orchestrator** — Pipeline controller managing the entire flow
-6. **Evidence Over Claims** — Screenshots, test results, and data — not assertions
+1. **Build→Review Loop** — Every implementation task goes through Code Reviewer before advancing; no exceptions
+2. **Security Gate** — Security Engineer approves all systems before launch
+3. **Brand Gate** — Brand Guardian reviews all outward-facing content before it ships
+4. **Handoffs** — Structured context transfer between agents; no agent starts cold
+5. **Evidence Over Claims** — Deliverables and test results required, not assertions
 
 ---
 
-## 🎭 The Agents at a Glance
+## 🎭 The Agents
 
 ```
-ENGINEERING         │ DESIGN              │ MARKETING
-Frontend Developer  │ UI Designer         │ Growth Hacker
-Backend Architect   │ UX Researcher       │ Content Creator
-Mobile App Builder  │ UX Architect        │ Twitter Engager
-AI Engineer         │ Brand Guardian      │ TikTok Strategist
-DevOps Automator    │ Visual Storyteller  │ Instagram Curator
-Rapid Prototyper    │ Whimsy Injector     │ Reddit Community Builder
-Senior Developer    │ Image Prompt Eng.   │ App Store Optimizer
-                    │                     │ Social Media Strategist
-────────────────────┼─────────────────────┼──────────────────────
-PRODUCT             │ PROJECT MGMT        │ TESTING
-Sprint Prioritizer  │ Studio Producer     │ Evidence Collector
-Trend Researcher    │ Project Shepherd    │ Reality Checker
-Feedback Synthesizer│ Studio Operations   │ Test Results Analyzer
-                    │ Experiment Tracker  │ Performance Benchmarker
-                    │ Senior Project Mgr  │ API Tester
-                    │                     │ Tool Evaluator
-                    │                     │ Workflow Optimizer
-────────────────────┼─────────────────────┼──────────────────────
-SUPPORT             │ SPATIAL             │ SPECIALIZED
-Support Responder   │ XR Interface Arch.  │ Agents Orchestrator
-Analytics Reporter  │ macOS Spatial/Metal │ Analytics Reporter
-Finance Tracker     │ XR Immersive Dev    │ LSP/Index Engineer
-Infra Maintainer    │ XR Cockpit Spec.    │ Sales Data Extraction
-Legal Compliance    │ visionOS Spatial    │ Data Consolidation
-Exec Summary Gen.   │ Terminal Integration│ Report Distribution
+ENGINEERING              │ DESIGN                  │ MARKETING
+Frontend Developer       │ UI Designer             │ Content Creator
+Rapid Prototyper         │ UX Architect            │ Social Media Strategist
+CMS Developer            │ Brand Guardian          │ SEO Specialist
+Code Reviewer            │ Visual Storyteller      │ Instagram Curator
+Security Engineer        │ Whimsy Injector         │ Agentic Search Optimizer
+Technical Writer         │ Image Prompt Engineer   │
+Git Workflow Master      │                         │
 ```
 
 ---
 
 <div align="center">
 
-**Start with a mode. Follow the playbook. Trust the pipeline.**
+**Start with a mode. Follow the sequence. Ship with confidence.**
 
 `strategy/nexus-strategy.md` — The complete doctrine
 
