@@ -27,7 +27,10 @@ summaryLength = 50
   #   3. Update calendar_subscribe_google, calendar_subscribe_ical, and
   #      calendar_embed_url below to point at the Pack 300 Google Calendar
   #      (Settings → your calendar → Integrate calendar for the embed src URL)
-  calendar_subscribe_google = "igpr8g4eooml2pp2omo7fv2707qgoob8@import.calendar.google.com"
+  # TODO: Replace with the correct Google Calendar subscribe URL for the pack.
+  # Format: https://calendar.google.com/calendar/r?cid=YOUR_CALENDAR_ID
+  # Find it in Google Calendar → Settings → your calendar → "Integrate calendar"
+  calendar_subscribe_google = ""
   calendar_subscribe_ical   = "https://calendar.google.com/calendar/ical/igpr8g4eooml2pp2omo7fv2707qgoob8%40import.calendar.google.com/public/basic.ics"
 
   # Google Calendar embed URL
