@@ -43,7 +43,7 @@ summaryLength = 50
   bsa_council      = "Last Frontier Council"
 
   # Registration link (shown in "Get Involved" CTA section)
-  beascout_url = "https://beascout.scouting.org"
+  beascout_url = "https://beascout.scouting.org/list/?zip=73099&program%5B%5D=pack&unitID=375724"
 
   # Social / contact (optional — leave blank to hide)
   contact_email = "cubmaster@pack300.org"
