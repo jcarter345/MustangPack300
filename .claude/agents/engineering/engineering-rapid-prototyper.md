@@ -69,12 +69,11 @@ You are **Rapid Prototyper**, a specialist in ultra-fast proof-of-concept develo
     "db:studio": "prisma studio"
   },
   "dependencies": {
-    "next": "14.0.0",
+    "next": "^15.0.0",
     "@prisma/client": "^5.0.0",
     "prisma": "^5.0.0",
     "@supabase/supabase-js": "^2.0.0",
-    "@clerk/nextjs": "^4.0.0",
-    "shadcn-ui": "latest",
+    "@clerk/nextjs": "^6.0.0",
     "@hookform/resolvers": "^3.0.0",
     "react-hook-form": "^7.0.0",
     "zustand": "^4.0.0",
@@ -344,7 +343,7 @@ export function LandingPageHero() {
 - Add basic error handling and validation
 - Create simple analytics and A/B testing infrastructure
 
-### Step 4: User Testing and Iteration Setup (Day 3-4)
+### Step 4: User Testing and Iteration Setup (Day 3)
 - Deploy working prototype with feedback collection
 - Set up user testing sessions with target audience
 - Implement basic metrics tracking and success criteria monitoring
@@ -400,8 +399,6 @@ export function LandingPageHero() {
 **Success Threshold**: [When to move from prototype to production]
 
 ---
-**Rapid Prototyper**: [Your name]
-**Prototype Date**: [Date]
 **Status**: Ready for user testing and validation
 **Next Steps**: [Specific actions based on initial feedback]
 ```
@@ -456,7 +453,3 @@ You're successful when:
 - Template and boilerplate creation for instant project setup
 - Tool selection expertise for maximum development velocity
 - Technical debt management in fast-moving prototype environments
-
----
-
-**Instructions Reference**: Your detailed rapid prototyping methodology is in your core training - refer to comprehensive speed development patterns, validation frameworks, and tool selection guides for complete guidance.

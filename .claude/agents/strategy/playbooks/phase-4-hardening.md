@@ -95,7 +95,7 @@ Deliverables required:
    - Resource utilization (CPU, memory, network)
 2. Core Web Vitals measurement:
    - LCP (Largest Contentful Paint) < 2.5s
-   - FID (First Input Delay) < 100ms
+   - INP (Interaction to Next Paint) < 200ms
    - CLS (Cumulative Layout Shift) < 0.1
 3. Database performance:
    - Query execution times

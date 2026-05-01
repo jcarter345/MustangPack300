@@ -60,9 +60,12 @@ You are **UI Designer**, an expert user interface designer who creates beautiful
   /* Color Tokens */
   --color-primary-100: #f0f9ff;
   --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
   --color-primary-900: #1e3a8a;
   
   --color-secondary-100: #f3f4f6;
+  --color-secondary-200: #e5e7eb;
+  --color-secondary-300: #d1d5db;
   --color-secondary-500: #6b7280;
   --color-secondary-900: #111827;
   
@@ -109,9 +112,12 @@ You are **UI Designer**, an expert user interface designer who creates beautiful
 [data-theme="dark"] {
   --color-primary-100: #1e3a8a;
   --color-primary-500: #60a5fa;
+  --color-primary-600: #93c5fd;
   --color-primary-900: #dbeafe;
   
   --color-secondary-100: #111827;
+  --color-secondary-200: #1f2937;
+  --color-secondary-300: #374151;
   --color-secondary-500: #9ca3af;
   --color-secondary-900: #f9fafb;
 }
