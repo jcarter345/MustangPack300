@@ -25,7 +25,7 @@ To prepare young people to make ethical and moral choices over their lifetimes b
 
 | Role | Name | Contact |
 | --- | --- | --- |
-| Cubmaster | David Sharp | [cubmaster@pack300.org](mailto:cubmaster@pack300.org) |
+| Cubmaster | David Sharp | [cubmaster@mustangpack300.org](mailto:cubmaster@mustangpack300.org) |
 
 ---
 

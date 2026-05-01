@@ -53,7 +53,7 @@ Cub Scouting is powered by parent volunteers. Open roles include:
 - Cubmaster or Assistant Cubmaster
 - Committee Chair, Advancement Chair, or Treasurer
 
-No experience is needed — free training is available online at [my.Scouting.org](https://my.scouting.org). Reach out to our Cubmaster at [cubmaster@pack300.org](mailto:cubmaster@pack300.org) to get started.
+No experience is needed — free training is available online at [my.Scouting.org](https://my.scouting.org). Reach out to our Cubmaster at [cubmaster@mustangpack300.org](mailto:cubmaster@mustangpack300.org) to get started.
 
 ---
 
