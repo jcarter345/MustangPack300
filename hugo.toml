@@ -13,6 +13,7 @@ summaryLength = 50
   description = "Cub Scout Pack 300 — Do Your Best!"
   tagline = "Do Your Best"
   pack_number = "300"
+  og_image    = "/images/CubScoutsLogo-nobg.png"
 
   # Calendar subscribe URLs (shown as buttons on the Events page)
   # Google: https://calendar.google.com/calendar/r?cid=YOUR_CALENDAR_ID

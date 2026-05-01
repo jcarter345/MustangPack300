@@ -56,6 +56,23 @@ a:hover { text-decoration: underline; }
 
 img { max-width: 100%; height: auto; display: block; }
 
+/* ---- Skip Link ---- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--gold);
+  color: var(--blue);
+  padding: .5rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  z-index: 9999;
+  text-decoration: none;
+}
+.skip-link:focus { top: 1rem; }
+
 /* ---- Container ---- */
 .container {
   width: 100%;
@@ -120,7 +137,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .logo-sub {
   font-size: .72rem;
-  color: var(--red);
+  color: var(--gold);
   letter-spacing: .08em;
   text-transform: uppercase;
   font-family: 'Lora', Georgia, serif;
