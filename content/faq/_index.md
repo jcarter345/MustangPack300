@@ -4,8 +4,6 @@ description: "Frequently asked questions about Cub Scout Pack 300"
 layout: "single"
 ---
 
-## Frequently Asked Questions
-
 **What is the difference between a den and a pack?**
 
 A **den** is a small group of Scouts who are all in the same grade — typically 6 to 8 youth. Dens meet regularly to work on rank Adventures together. A **pack** is the larger group made up of all the dens. The full pack gathers for bigger events like the Pinewood Derby, Blue and Gold Banquet, and service projects.
