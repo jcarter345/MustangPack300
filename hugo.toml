@@ -1,6 +1,7 @@
 baseURL = "https://mustangpack300.org/"
 languageCode = "en-us"
-title = "Cub Scout Pack 300"
+title = "Cub Scout Pack 300 | Yukon, OK"
+enableRobotsTXT = true
 
 # Enable content section summaries
 summaryLength = 50
@@ -69,6 +70,11 @@ summaryLength = 50
     pageRef    = "/references"
     url        = "/references/"
     weight     = 4
+
+[sitemap]
+  changefreq = "weekly"
+  priority   = 0.5
+  filename   = "sitemap.xml"
 
 [markup]
   [markup.goldmark]

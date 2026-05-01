@@ -17,9 +17,44 @@
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:locale" content="en_US">
   {{ $img := or .Params.image .Site.Params.og_image }}
   {{ with $img }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  {{ with $img }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="theme-color" content="#003F87">
+  <!-- Organization Schema -->
+  {{ if .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    "name": "Cub Scout Pack 300",
+    "url": "{{ .Site.BaseURL }}",
+    "logo": "{{ "/images/CubScoutsLogo-nobg.png" | absURL }}",
+    "description": "{{ .Site.Params.description }}",
+    "email": "{{ .Site.Params.contact_email }}",
+    "sport": "Scouting",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "10928 SW 15th St",
+      "addressLocality": "Yukon",
+      "addressRegion": "OK",
+      "postalCode": "73099",
+      "addressCountry": "US"
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "{{ .Site.Params.bsa_council }}",
+      "url": "https://www.lastfrontiercouncil.org"
+    }
+  }
+  </script>
+  {{ end }}
 </head>
 <body>
 
