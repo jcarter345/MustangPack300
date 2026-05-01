@@ -3,7 +3,7 @@ title: "About Pack 300"
 description: "Learn about Cub Scout Pack 300"
 ---
 
-![Cub Scout Pack 300 — join the adventure](/images/Pack%203300-All%20photos-72648658229-safe.jpg)
+![Cub Scout Pack 300 — join the adventure](/images/pack300-about.jpg)
 
 Cub Scout Pack 300 is a proud unit of **Scouting America**, dedicated to helping young people develop character, citizenship, and a love of the outdoors.
 

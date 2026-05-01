@@ -228,7 +228,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero {
   background:
     linear-gradient(135deg, rgba(0,51,102,.86) 0%, rgba(0,63,135,.80) 60%, rgba(26,82,160,.76) 100%),
-    url('/images/Pack%203300-All%20photos-75483054403.jpg') center 5%/cover no-repeat;
+    url('/images/pack300-hero.jpg') center 5%/cover no-repeat;
   color: var(--white);
   padding: 4rem 0 3.5rem;
   text-align: center;
